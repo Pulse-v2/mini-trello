@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply bg-gradient-to-r from-slate-800 to-gray-700 text-gray-200 box-border;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-500 rounded-xl;
+}
+
+.task > ::-webkit-scrollbar-thumb {
+  @apply bg-slate-500 rounded-xl;
+}
